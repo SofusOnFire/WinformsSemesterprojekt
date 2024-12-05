@@ -17,6 +17,8 @@ namespace WinformsSemesterprojekt
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            //Hej :3 :P
         }
     }
 }
