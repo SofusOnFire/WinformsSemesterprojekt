@@ -16,5 +16,12 @@ namespace WinformsSemesterprojekt
         {
             InitializeComponent();
         }
+
+        private void btnMainmenu_Click(object sender, EventArgs e)
+        {
+            Hovedmenu hovedmenu = new Hovedmenu();
+            hovedmenu.Show();
+            this.Hide();
+        }
     }
 }

@@ -19,6 +19,7 @@ namespace WinformsSemesterprojekt
             Application.Run(new Hovedmenu());
 
             //Hej :3 :P
+            //whaddup
         }
     }
 }

@@ -37,7 +37,7 @@
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnMainmenu = new System.Windows.Forms.Button();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.button3 = new System.Windows.Forms.Button();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
@@ -133,14 +133,15 @@
             this.radioButton2.Text = "Ikke på lager";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnMainmenu
             // 
-            this.button2.Location = new System.Drawing.Point(13, 415);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Hovedmenu";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnMainmenu.Location = new System.Drawing.Point(13, 415);
+            this.btnMainmenu.Name = "btnMainmenu";
+            this.btnMainmenu.Size = new System.Drawing.Size(103, 23);
+            this.btnMainmenu.TabIndex = 9;
+            this.btnMainmenu.Text = "Hovedmenu";
+            this.btnMainmenu.UseVisualStyleBackColor = true;
+            this.btnMainmenu.Click += new System.EventHandler(this.btnMainmenu_Click);
             // 
             // vScrollBar1
             // 
@@ -174,7 +175,7 @@
             this.Controls.Add(this.vScrollBar2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.vScrollBar1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnMainmenu);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.checkedListBox1);
@@ -203,7 +204,7 @@
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnMainmenu;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.VScrollBar vScrollBar2;
