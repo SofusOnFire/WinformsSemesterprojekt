@@ -8,5 +8,9 @@ namespace WinformsSemesterprojekt.Models
 {
     internal class DatabaseManager
     {
+        string ConnectionString = "Data Source=localhost;" +
+                                  "Initial Catalog=ProProduction;" +
+                                  "Integrated Security=SSPI;" +
+                                  "TrustServerCertificate=true";
     }
 }
