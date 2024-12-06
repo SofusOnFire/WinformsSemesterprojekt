@@ -40,6 +40,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.button3 = new System.Windows.Forms.Button();
+            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,6 +76,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.AcceptsReturn = true;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(326, 28);
             this.textBox1.Name = "textBox1";
@@ -85,11 +87,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(326, 113);
+            this.dataGridView1.Location = new System.Drawing.Point(325, 113);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(462, 325);
+            this.dataGridView1.Size = new System.Drawing.Size(444, 325);
             this.dataGridView1.TabIndex = 4;
             // 
             // button1
@@ -142,7 +144,7 @@
             // 
             // vScrollBar1
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(766, 113);
+            this.vScrollBar1.Location = new System.Drawing.Point(757, 113);
             this.vScrollBar1.Name = "vScrollBar1";
             this.vScrollBar1.Size = new System.Drawing.Size(21, 325);
             this.vScrollBar1.TabIndex = 10;
@@ -156,12 +158,20 @@
             this.button3.Text = "Sorter efter";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // vScrollBar2
+            // 
+            this.vScrollBar2.Location = new System.Drawing.Point(215, 110);
+            this.vScrollBar2.Name = "vScrollBar2";
+            this.vScrollBar2.Size = new System.Drawing.Size(21, 191);
+            this.vScrollBar2.TabIndex = 12;
+            // 
             // Produkter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.vScrollBar2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.button2);
@@ -196,5 +206,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.VScrollBar vScrollBar2;
     }
 }
