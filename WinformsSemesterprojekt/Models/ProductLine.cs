@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinformsSemesterprojekt.Models
 {
-    internal class ProductLine
+    public class ProductLine
     {
         public int OrderID { get; set; }
         public int ProductID { get; set; }

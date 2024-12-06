@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace WinformsSemesterprojekt.Models
 {
-    internal class Product
+    public class Product
     {
-        public int ProductID { get; set; }
+        public int ProductID { get; private set; }
         public string ProductName { get; set; }
         public double UnitPrice { get; set; }
         public int InStock { get; set; }

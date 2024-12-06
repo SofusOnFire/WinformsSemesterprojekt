@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace WinformsSemesterprojekt.Models
 {
-    internal class Order
+    public class Order
     {
-        public int OrderID { get; set; }
+        public int OrderID { get; private set; }
         public int ProductLineID { get; set; }
         public int CustomerID { get; set; }
         public DateTime OrderDate { get; set; }

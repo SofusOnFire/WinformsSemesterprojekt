@@ -1,6 +1,6 @@
 ﻿namespace WinformsSemesterprojekt
 {
-    partial class Produkter
+    partial class Products
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.productView = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -41,7 +41,7 @@
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.button3 = new System.Windows.Forms.Button();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -82,27 +82,28 @@
             this.textBox1.AcceptsReturn = true;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(244, 23);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(298, 20);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Søg efter et produkt...";
             // 
-            // dataGridView1
+            // productView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(244, 92);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(322, 264);
-            this.dataGridView1.TabIndex = 4;
+            this.productView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.productView.Location = new System.Drawing.Point(244, 92);
+            this.productView.Margin = new System.Windows.Forms.Padding(2);
+            this.productView.Name = "productView";
+            this.productView.RowHeadersWidth = 51;
+            this.productView.RowTemplate.Height = 24;
+            this.productView.Size = new System.Drawing.Size(322, 264);
+            this.productView.TabIndex = 4;
+            this.productView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(547, 21);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(44, 19);
             this.button1.TabIndex = 5;
@@ -113,16 +114,16 @@
             // 
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(8, 89);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(164, 154);
+            this.checkedListBox1.Size = new System.Drawing.Size(151, 154);
             this.checkedListBox1.TabIndex = 6;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(8, 279);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(64, 17);
             this.radioButton1.TabIndex = 7;
@@ -134,7 +135,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(8, 300);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(87, 17);
             this.radioButton2.TabIndex = 8;
@@ -145,7 +146,7 @@
             // btnMainmenu
             // 
             this.btnMainmenu.Location = new System.Drawing.Point(10, 337);
-            this.btnMainmenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMainmenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainmenu.Name = "btnMainmenu";
             this.btnMainmenu.Size = new System.Drawing.Size(77, 19);
             this.btnMainmenu.TabIndex = 9;
@@ -163,7 +164,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(514, 55);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(77, 19);
             this.button3.TabIndex = 11;
@@ -177,7 +178,7 @@
             this.vScrollBar2.Size = new System.Drawing.Size(21, 155);
             this.vScrollBar2.TabIndex = 12;
             // 
-            // Produkter
+            // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -191,15 +192,15 @@
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.productView);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "Produkter";
-            this.Text = "Produkter";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "Products";
+            this.Text = "Products";
+            ((System.ComponentModel.ISupportInitialize)(this.productView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,7 +212,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView productView;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.RadioButton radioButton1;

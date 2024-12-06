@@ -19,7 +19,7 @@ namespace WinformsSemesterprojekt
 
         private void btnProducts_Click(object sender, EventArgs e)
         {
-            Produkter produkter = new Produkter();
+            Products produkter = new Products();
             produkter.Show();
             this.Hide();
         }
