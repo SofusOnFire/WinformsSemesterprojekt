@@ -23,5 +23,9 @@ namespace WinformsSemesterprojekt
             hovedmenu.Show();
             this.Hide();
         }
+        private void comboBoxSorting_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // work in progress - Sarah
+        }
     }
 }

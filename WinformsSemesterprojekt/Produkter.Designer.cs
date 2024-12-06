@@ -39,8 +39,8 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.btnMainmenu = new System.Windows.Forms.Button();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.button3 = new System.Windows.Forms.Button();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
+            this.comboBoxSorting = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,15 +150,6 @@
             this.vScrollBar1.Size = new System.Drawing.Size(21, 325);
             this.vScrollBar1.TabIndex = 10;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(685, 68);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(103, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Sorter efter";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // vScrollBar2
             // 
             this.vScrollBar2.Location = new System.Drawing.Point(215, 110);
@@ -166,14 +157,24 @@
             this.vScrollBar2.Size = new System.Drawing.Size(21, 191);
             this.vScrollBar2.TabIndex = 12;
             // 
+            // comboBoxSorting
+            // 
+            this.comboBoxSorting.FormattingEnabled = true;
+            this.comboBoxSorting.Location = new System.Drawing.Point(657, 68);
+            this.comboBoxSorting.Name = "comboBoxSorting";
+            this.comboBoxSorting.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxSorting.TabIndex = 13;
+            this.comboBoxSorting.Text = "Sorter efter...";
+            this.comboBoxSorting.SelectedIndexChanged += new System.EventHandler(this.comboBoxSorting_SelectedIndexChanged);
+            // 
             // Produkter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBoxSorting);
             this.Controls.Add(this.vScrollBar2);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.btnMainmenu);
             this.Controls.Add(this.radioButton2);
@@ -206,7 +207,7 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Button btnMainmenu;
         private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.VScrollBar vScrollBar2;
+        private System.Windows.Forms.ComboBox comboBoxSorting;
     }
 }
