@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace WinformsSemesterprojekt
 {
-    public partial class Hovedmenu : Form
+    public partial class Produkter : Form
     {
-        public Hovedmenu()
+        public Produkter()
         {
             InitializeComponent();
-        }
-
-        private void btnProducts_Click(object sender, EventArgs e)
-        {
-            Produkter produkter = new Produkter();
-            produkter.Show();
-            this.Hide();
         }
     }
 }

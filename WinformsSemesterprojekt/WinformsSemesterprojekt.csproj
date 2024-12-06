@@ -52,10 +52,19 @@
     <Compile Include="Hovedmenu.Designer.cs">
       <DependentUpon>Hovedmenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Produkter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produkter.Designer.cs">
+      <DependentUpon>Produkter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Hovedmenu.resx">
       <DependentUpon>Hovedmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produkter.resx">
+      <DependentUpon>Produkter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
